@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Account Settings</title>
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="logo">
+        <h1>Shop-Shop</h1>
+      </div>
+	  
+      <div class="nav">
+        <ul>
+          <!--Add some link directory-->
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <div class="ig">
+          <img src="images/profile1.jpg" id="navbar" alt="" />
+        </div>
+		
+        <div class="float" id="flow">
+          <div class="profile">
+            <img src="images/profile1.jpg" alt="" />
+            <h4>Hoariz M. Besas</h4>
+          </div>
+
+          <!--(hr) Thematic break paragraph-level elements-->
+          <hr />
+
+          <div class="div">
+            <div class="ic">
+              <i class="fa-regular fa-user"></i>
+              <!--Add some link directory for Edit Profile-->
+              <a href="index1.html">My Account</a>
+            </div>
+
+            <div class="ic">
+              <i class="fa-solid fa-hand"></i>
+              <!--Add some link directory Account Settings-->
+              <a href="my-purchase.php">My Purchase</a>
+            </div>
+
+            <div class="ic">
+              <i class="fa-solid fa-right-from-bracket"></i>
+              <!--Add some link directory for Logout-->
+              <a href="logout.php">Logout</a>
+            </div>
+          </div>
+        </div>
+      </div>
+	  
+    </div>
+    <script>
+    let navBar = document.getElementById("navbar");
+    let flow = document.getElementById("flow");
+    navBar.addEventListener("click", () => flow.classList.toggle("fin"));
+  </script>
+  </body>
+
+</html>
